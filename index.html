@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Registration Form </h1>
+    <form action="main.py">
+        <div class="name">
+            <label for="name">Name:</label>
+            <input type="text",id="name" placeholder="Enter Your Name">
+        </div><br>
+        <div class="age">
+            <label for="age">Age  :</label>
+            <input type="number",id="age" placeholder="Enter Your Age ">
+        </div><br>
+        <div class="email">
+            <label for="email">Email:</label>
+            <input type="email",id="email" placeholder="Enter Your Email Id">
+        </div><br>
+        <div class="dob">
+            <label for="dob">DOB:</label>
+            <input type="date",id="dob" >
+        </div><br>
+        <div class="Gender">
+            
+    
+            <label for="gen">Gender:</label>
+            <label for="male">Male <input type="radio" name="gen" value="1"></label>
+            <span><label for="female">Female <input type="radio" name="gen" name="gen" value="2"></label></span>
+           
+        </div><br>
+        <div>
+            <label for="cat">Types of Vechicle:</label>
+            <label for="cat">
+                <input type="checkbox" name="cate" value="1">Two Wheeler
+            </label>
+            <label for="cat">
+                <input type="checkbox" name="cate" value="2" >Four Wheeler
+            </label>
+
+        </div><br>
+        <div>
+            <label for="vcal">Vechicles:</label>
+            <select name="vcal" id="vcal" >
+               <optgroup label="Cars">
+                <option value="cars">TATA</option>
+                <option value="cars">Toyota</option>
+                <option value="cars">Audi</option>
+               </optgroup>
+                <optgroup label="Bikes">
+                    <option value="bike">TVS Apache</option>
+                    <option value="bike">Bajaj Pulsar</option>
+                    <option value="bike">Honda Shine</option>
+                    <option value="bike">Hero Splender</option>
+                </optgroup>
+            </select>
+            
+        </div><br>
+        <div>
+            <button id="button">
+                Submit
+            </button>
+        </div>
+
+
+    </form>
+</body>
+</html>
